@@ -48,5 +48,5 @@ snap install bitwarden # Password manager
 
 
 ##### Fun Corner #####
-snap install --beta steam
+sudo apt install steam
 snap install spotify
