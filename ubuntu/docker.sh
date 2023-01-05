@@ -21,6 +21,7 @@ sudo apt-get update && sudo apt-get install -y docker-ce docker-ce-cli container
 
 
 # Make docker executable without super privileges
+# TODO: continue script if docker group already exists
 sudo groupadd docker # 1. create `docker` group (if not already created)
 sudo usermod -aG docker $USER # 2. add user to `docker` group
 newgrp docker # 3. log out and log back in, or reboot. Verify by running `docker run hello-world`
